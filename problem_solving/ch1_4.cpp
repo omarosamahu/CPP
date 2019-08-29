@@ -52,6 +52,6 @@ int main(int argc, char const *argv[])
     std::cout << "Entr the number" << std::endl;
     std::cin >> x;
     std::cout << get_largest_prime(x) << std::endl;
-   
+    
     return 0;
 }

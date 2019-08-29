@@ -1,17 +1,26 @@
 #include <iostream>
 
 class Singleton{
+
+private:
  static Singleton *instance;
     int data;
     Singleton(){
         data = 0;
-    } 
- public:
+    }
+    Singleton(int a){
+        data = a;
+    }
+
+public:
+     
     static Singleton *getInstance(){
         if (!instance)
         {
-            instance = new Singleton;
+            instance = new Singleton();
+          
         }
+        
         return instance;
         
     }
@@ -28,10 +37,16 @@ Singleton *Singleton::instance =0;
 
 int main(int argc, char const *argv[])
 {
+    Singleton *s = Singleton::getInstance();
+    s = Singleton::getInstance();
+
     
-    Singleton *s = s->getInstance();
-    std::cout << s->getData() << std::endl;
     s->setData(100);
     std::cout << s->getData() << std::endl;
+
+    
+    
+
+
     return 0;
 }

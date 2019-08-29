@@ -34,12 +34,13 @@ int main(int argc, char const *argv[])
         {"Fake","Name",2000},
         {"Osama","Tarek",2000}
     };
-
+     
     //sort(staff.begin(),staff.end(),[](Emplyee e1,Emplyee e2){return e1.getSalary() > e2.getSalary();});
     auto sorted = is_sorted(staff.begin(),staff.end(),[](Emplyee e1,Emplyee e2){return e1.getSalary() > e2.getSalary();});
-    cout << sorted <<endl;
+    vector<Emplyee>::iterator it = staff.begin();
+   // cout << *it <<endl;
 
-    auto h = *(max_element(begin(staff),end(staff)));
+   // auto h = *(max_element(begin(staff),end(staff)));
 
     return 0;
 }

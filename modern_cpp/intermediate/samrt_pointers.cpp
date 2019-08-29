@@ -4,6 +4,7 @@
 
 using std::make_shared;
 using std::make_unique;
+using std::weak_ptr;
 using std::unique_ptr;
 using std::shared_ptr;
 using std::cout;
@@ -35,13 +36,16 @@ int main(int argc, char const *argv[])
 //    assert(!sp); //This means that the pointer is not a valid pointer 
    
       auto sp = make_shared<int>(123);
+      auto wp = weak_ptr<int>{sp}; //Intialize a weak ptr with the value of shared ptr
+
+
       assert(sp);
       assert(sp.use_count()==1);
       assert(sp.unique());
       auto sp2 = sp; // u can copy the shared pointer
       assert(sp.use_count()==2);
       assert(!sp.unique());
-      assert(sp2.use_count()==3);
+      assert(sp2.use_count()==1);
       assert(!sp2.unique());
 
 
