@@ -11,16 +11,11 @@ bool is_palendrom(unsigned n){
     
     while(n%10 != 0 || n/10 != 0){
         
-       if(n/10 == 1){
-           buff.push_back(0);
-           n = n/10;
-       }
-       else
-       {
-            val = n%10;
+       
+        val = n%10;
         n = n/10;
         buff.push_back(val);
-       }
+       
        
         
         
@@ -31,7 +26,7 @@ bool is_palendrom(unsigned n){
     }
     cout << std::endl;
     
-    int i = buff.size()-1;
+    int i = buff.size() -1;
     int j = 0;
    
    
@@ -60,7 +55,7 @@ bool is_palendrom(unsigned n){
 int main(int argc, char const *argv[])
 {
     
-    bool chekPal = is_palendrom(1010);
+    bool chekPal = is_palendrom(11);
     cout << chekPal << std::endl;
     return 0;
 }
