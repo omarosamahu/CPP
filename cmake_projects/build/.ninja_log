@@ -1,0 +1,16 @@
+# ninja log v5
+0	14	0	CMakeFiles/foo.dir/foo.cpp.o	55a2f955f3ad49ab
+0	115	0	CMakeFiles/foo.dir/foo.cpp.o	55a2f955f3ad49ab
+115	159	0	foo	619b06e9af2cfef8
+0	147	0	CMakeFiles/foo.dir/foo.cpp.o	55a2f955f3ad49ab
+147	197	0	foo	619b06e9af2cfef8
+0	226	0	CMakeFiles/foo.dir/foo.cpp.o	aa2e7fa0d37b5cb0
+226	271	0	foo	619b06e9af2cfef8
+0	133	0	CMakeFiles/foo.dir/foo.cpp.o	aa2e7fa0d37b5cb0
+133	177	0	foo	619b06e9af2cfef8
+0	81	0	build.ninja	a7367f0b7a25720e
+0	294	0	CMakeFiles/foo.dir/foo.cpp.o	aa2e7fa0d37b5cb0
+294	396	0	foo	fab65e0e3132b6cd
+0	80	0	foo	619b06e9af2cfef8
+0	86	0	build.ninja	a7367f0b7a25720e
+0	101	0	foo	fab65e0e3132b6cd

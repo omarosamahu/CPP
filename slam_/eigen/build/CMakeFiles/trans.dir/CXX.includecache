@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/omar/Documents/cpp/slam/eigen/src/transformation.cpp
+iostream
+-
+eigen3/Eigen/Core
+-
+eigen3/Eigen/Dense
+-
+eigen3/Eigen/Geometry
+-
+ceres/ceres.h
+-
+

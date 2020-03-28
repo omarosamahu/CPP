@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/trans.dir/src/transformation.cpp.o  -o trans 
