@@ -10,7 +10,7 @@ class CircularBuffer{
     std::vector<T> buff;
     public:
     CircularBuffer(int l):length(l){
-        //buff.resize(l);
+        buff.resize(l);
         std::cout << "A buffer created with "<<l<<" elements\n";
     }
     bool empty(){
@@ -48,19 +48,13 @@ class CircularBuffer{
 
 int main(int argc, char const *argv[])
 {
-    CircularBuffer<int> *b = new CircularBuffer<int>(3);
-    b->push(12);
-    b->push(13);
-    b->push(14);
-    b->push(15);
-    b->push(16);
-    // b->push(17);
-    // b->push(18);
-    // b->push(19);
-    // b->pop();
-    // b->pop();
-    // b->pop();
-    // b->pop();
-    b->printBuffer();
+    CircularBuffer<int> b(3);
+    b.push(12);
+    b.push(13);
+    b.push(14);
+    b.push(15);
+    b.push(16);
+
+    b.printBuffer();
 
 }
