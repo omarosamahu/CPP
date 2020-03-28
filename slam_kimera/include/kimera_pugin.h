@@ -42,11 +42,11 @@ namespace SLAM{
         // IMU matrix 
         VIO::Vector6 acc_gyr;
         // Create a shared pointer to your Pipeline 
-		std::shared_ptr<VIO::Pipeline> mKIMERA;
-		// Create a unique pointer to your Provider  
-		std::shared_ptr<VIO::DataProviderInterface> mProvider;
-		// Create object from VIOBackend
-		std::unique_ptr<VIO::BackendOutput> vio_output;
+	std::shared_ptr<VIO::Pipeline> mKIMERA;
+	// Create a unique pointer to your Provider  
+	std::shared_ptr<VIO::DataProviderInterface> mProvider;
+	// Create object from VIOBackend
+	std::unique_ptr<VIO::BackendOutput> vio_output;
         // Image Data
         std::vector<slamData> data;
         
